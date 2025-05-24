@@ -14,6 +14,39 @@
   padding: 10px 15px;
 }
 
+.portrait-video {
+  position: relative;
+  width: 100%;
+  max-width: 720px; /* or whatever max width */
+  padding-top: 177.78%; /* 16/9 inverted for portrait */
+  margin-bottom: 1em;
+}
+
+.portrait-video iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Landscape (16:9) container */
+.landscape-video {
+  position: relative;
+  width: 100%;
+  max-width: 1920px; /* or your max width */
+  padding-top: 56.25%; /* 9/16 * 100% */
+  margin-bottom: 1em;
+}
+
+.landscape-video iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 /*:root {
     --darkerText: #767676;
     --text: #FFFFFF;
